@@ -1,3 +1,5 @@
+[![tests](https://github.com/vabhishekprakash/amazon-ml-2026/actions/workflows/tests.yml/badge.svg)](https://github.com/vabhishekprakash/amazon-ml-2026/actions/workflows/tests.yml)
+
 # Business entity resolution for Amazon ML Challenge 2026
 
 This repository links business listings from two secondary sources (Source 2 and Source 3)
