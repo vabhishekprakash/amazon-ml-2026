@@ -95,3 +95,11 @@ python scripts/build_package.py --run-name final --team-name "<team name>"
 
 The build checks that the packaged results match their recorded SHA256 and that every
 packaged module compiles before it writes the zip.
+
+
+## Team
+
+Built by a team of two for the Amazon ML Challenge 2026. Abhishek designed
+and built the pipeline: data analysis, blocking, features, models, the
+cross-encoder, evaluation and the submission package. Akhil ran training
+jobs on his GPU and MacBook.
