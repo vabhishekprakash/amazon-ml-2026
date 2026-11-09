@@ -1,0 +1,6 @@
+034154f2b57f7f43606d51e10840945248f335508a901697695576a89f96159c  matching_results.tsv
+size 94064986 bytes, 1,732,545 lines (header + 1,732,544 test Source 1 entities)
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks (src/check_submission.py): 12/12 PASS
+model: 5 averaged LightGBMs on 225k train entities; learned pre-ranker (30k entities) keeps the top 40 candidates; threshold 0.75 + target-argmax
+code: commit a28e8b9; scores outputs/scores/test_v7; 3.21 ids per entity, 6.09% empty
+held-out 4-fold cross-fit 0.97604 +- 0.00090 (60,000 entities); single 15k split 0.97593 (sub06 model 0.97492 on the same split)

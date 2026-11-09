@@ -1,0 +1,5 @@
+0bee6675eb94c4add25c36a8908dbd169fe13ccaacd90998139632959fe835d1  matching_results.tsv
+size 93542920 bytes, 1,732,545 lines (header + 1,732,544 test Source 1 entities)
+official validator --check-ids: PASS; format checks (src/check_submission.py): 12/12 PASS
+model: 5 averaged LightGBMs on 225k train entities; name-pair, domain, address-count and house-offset features; threshold 0.75 + target-argmax
+held-out 4-fold cross-fit 0.9747 (60,000 entities); staged below the 0.979 gate on explicit approval

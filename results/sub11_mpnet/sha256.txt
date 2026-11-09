@@ -1,0 +1,5 @@
+f5c7c57b02c1b1f7e97796cc97f47421319101085f4294cf411ad38ec6b9fe5f  matching_results.tsv
+size 95017267 bytes
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks PASS
+model: sub09 LightGBM blended with the mpnet cross-encoder (US/India, results/ce_blend/blend_g127_mpnet.json, held-out 0.98222); France keeps LightGBM with threshold 0.95; argmax_threshold 0.80
+3.250 ids per entity, 6.06% empty

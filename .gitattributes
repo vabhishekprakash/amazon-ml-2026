@@ -1,0 +1,5 @@
+# Both machines append rows to the experiment log; union merge keeps both sides.
+experiments.csv merge=union
+
+# Submission and dataset files are byte-exact: never rewrite their line endings.
+*.tsv -text

@@ -1,0 +1,14 @@
+{
+  "entities": 32278,
+  "city_mod": 40,
+  "results": {
+    "threshold 0.60": 0.9709998187292154,
+    "argmax_threshold 0.60": 0.9719307999088432,
+    "threshold 0.70": 0.9711181241896061,
+    "argmax_threshold 0.70": 0.9718845596721342,
+    "threshold 0.75": 0.971152553100404,
+    "argmax_threshold 0.75": 0.9717928504935037,
+    "threshold 0.80": 0.9709793510793265,
+    "argmax_threshold 0.80": 0.971460936102166
+  }
+}

@@ -1,0 +1,91 @@
+
+==========================================================================
+TRAIN: SOURCES
+==========================================================================
+ source      records  blank_name  uniq_name_keys  countries
+      1    2,206,821           0       1,503,856  India=883,188, US=1,323,633
+      2    5,034,616       3,355       3,859,329  India=2,017,799, US=3,016,817
+      3    5,285,603       3,586       4,092,891  India=2,115,547, US=3,170,056
+
+==========================================================================
+TRAIN: GROUND TRUTH
+==========================================================================
+source 1 entities:      2,206,821
+zero-match (singleton): 123,247 (5.58%)
+exactly one match:      119,157 (5.40%)
+two or more:            1,964,417 (89.02%)
+matches per entity: mean=3.461 p50=3 p95=6 max=11
+histogram: {0: 123247, 1: 119157, 2: 375212, 3: 530841, 4: 484115, 5: 321957, 6: 164868, 7: 63968, 8: 18680, 9: 4205, 10: 534, 11: 37}
+matched ids: 7,638,365  (S2 3,693,619 = 48.36%, S3 3,944,746 = 51.64%)
+
+What a partial answer is worth (F0.5 for k true matches, all correct, none extra):
+  k=1: predict 1 -> 1.000   predict all 1 -> 1.000   predict nothing -> 0.000
+  k=2: predict 1 -> 0.833   predict all 2 -> 1.000   predict nothing -> 0.000
+  k=3: predict 1 -> 0.714   predict all 3 -> 1.000   predict nothing -> 0.000
+  k=4: predict 1 -> 0.625   predict all 4 -> 1.000   predict nothing -> 0.000
+  k=5: predict 1 -> 0.556   predict all 5 -> 1.000   predict nothing -> 0.000
+  k=6: predict 1 -> 0.500   predict all 6 -> 1.000   predict nothing -> 0.000
+  k=7: predict 1 -> 0.455   predict all 7 -> 1.000   predict nothing -> 0.000
+
+==========================================================================
+TRAIN: RESOLVING TRUE PAIRS TO ROWS
+==========================================================================
+ground-truth S1 ids not found in train_source1: 0
+S2 matched ids not found in train_source2: 0
+S3 matched ids not found in train_source3: 0
+
+==========================================================================
+TRAIN: DO TRUE MATCHES SHARE A NAME?
+==========================================================================
+  S1-S2: 3,693,619 pairs | identical normalized name 28.56% | identical token-sorted name 34.68% | same country 100.00%
+  S1-S3: 3,944,746 pairs | identical normalized name 29.23% | identical token-sorted name 35.09% | same country 100.00%
+
+  Exact-name recall is the ceiling for the exact-match baseline.
+  Token-sorted recall shows what fixing word order alone would buy.
+  Blocking within country is only safe if same-country is ~100%.
+
+==========================================================================
+TRAIN: NAME AMBIGUITY INSIDE A COUNTRY
+==========================================================================
+  source 1: 40.01% of records share their (country, name) with another record | max group 253
+  source 2: 32.27% of records share their (country, name) with another record | max group 2,270
+  source 3: 31.10% of records share their (country, name) with another record | max group 2,413
+
+  The baseline only accepts an exact-name hit when the name is unique in
+  the target source for that country, or an address number agrees.
+
+==========================================================================
+TRAIN: BLOCKING RECALL (exact name key, within country)
+==========================================================================
+       key  target  pair_recall  cand/entity   no_cand
+  name_key      S2       28.56%         5.96    39.01%
+  name_key      S3       29.23%         6.82    37.14%
+  sort_key      S2       34.68%         6.85    33.54%
+  sort_key      S3       35.09%         7.90    31.88%
+
+  pair_recall here is the share of true pairs whose two records share the key.
+  A pair missing from candidates can never be recovered downstream.
+
+==========================================================================
+TRAIN: ADDRESS SIGNAL (sample of 30,000 true pairs per source)
+==========================================================================
+  S1-S2 (30,000 sampled pairs): a postcode is present on either side 8.86% | house number agrees 81.55% | postcode agrees 5.01% | either agrees 81.55%
+  S1-S3 (30,000 sampled pairs): a postcode is present on either side 8.39% | house number agrees 82.75% | postcode agrees 4.87% | either agrees 82.75%
+
+==========================================================================
+TEST
+==========================================================================
+
+==========================================================================
+TEST: SOURCES
+==========================================================================
+ source      records  blank_name  uniq_name_keys  countries
+      1    1,732,544           0       1,211,986  France=259,452, India=809,986, US=663,106
+      2    4,887,273       2,158       3,856,068  France=703,378, India=2,312,565, US=1,871,330
+      3    5,082,316       2,230       4,041,033  France=731,615, India=2,405,000, US=1,945,701
+
+countries in train: ['India', 'US']
+countries only in test: ['France']
+submission rows required: 1,732,544
+
+wrote results\eda\summary.json

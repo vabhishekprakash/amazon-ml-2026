@@ -1,0 +1,5 @@
+c99de46774c6c1acfd897214c0ae56063de79e04a4fdfb8cf8ac211b8a7c7715  matching_results.tsv
+size 95372292 bytes, 1,732,545 lines
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks: 12/12 PASS
+model: sub09 LightGBM blended with the multilingual cross-encoder for countries with training labels (raw-scale blend results/ce_blend/blend_addridf.json); France keeps LightGBM; argmax_threshold 0.75
+3.266 ids per entity, 5.97% empty

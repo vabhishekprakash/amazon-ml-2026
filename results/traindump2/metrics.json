@@ -1,0 +1,19 @@
+{
+  "split": "train",
+  "run": "traindump2",
+  "rows": 200000,
+  "limit": 200000,
+  "entities_fit": 25000,
+  "max_df": 300,
+  "max_group": 200,
+  "calibrated": false,
+  "top_k": 50,
+  "heldout_macro_f05": NaN,
+  "heldout_entities": 0,
+  "candidate_pairs": 9008727,
+  "cand_per_entity": 45.043635,
+  "predicted_ids": 585366,
+  "ids_per_entity": 2.92683,
+  "entities_with_match": 199466,
+  "seconds": 1355.356820344925
+}

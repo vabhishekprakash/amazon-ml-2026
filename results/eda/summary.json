@@ -1,0 +1,152 @@
+{
+  "sample": null,
+  "train_source1": {
+    "records": 2206821,
+    "blank_name": 0,
+    "unique_name_keys": 1503856,
+    "countries": {
+      "US": 1323633,
+      "India": 883188
+    }
+  },
+  "train_source2": {
+    "records": 5034616,
+    "blank_name": 3355,
+    "unique_name_keys": 3859329,
+    "countries": {
+      "India": 2017799,
+      "US": 3016817
+    }
+  },
+  "train_source3": {
+    "records": 5285603,
+    "blank_name": 3586,
+    "unique_name_keys": 4092891,
+    "countries": {
+      "US": 3170056,
+      "India": 2115547
+    }
+  },
+  "ground_truth": {
+    "entities": 2206821,
+    "zero_match_frac": 0.05584820880352326,
+    "mean_matches": 3.4612526344456573,
+    "max_matches": 11,
+    "s2_share": 0.4835614689792907
+  },
+  "pair_resolution": {
+    "s1_missing": 0
+  },
+  "name_agreement": [
+    {
+      "source": 2,
+      "pairs": 3693619,
+      "same_norm_name": 0.2856103999898203,
+      "same_sorted_name": 0.34680025200216913,
+      "same_country": 1.0
+    },
+    {
+      "source": 3,
+      "pairs": 3944746,
+      "same_norm_name": 0.292264444909761,
+      "same_sorted_name": 0.3509075109018426,
+      "same_country": 1.0
+    }
+  ],
+  "ambiguity": {
+    "source1": {
+      "non_unique_share": 0.40012851064948174,
+      "max_group": 253
+    },
+    "source2": {
+      "non_unique_share": 0.32270187041077214,
+      "max_group": 2270
+    },
+    "source3": {
+      "non_unique_share": 0.3110250618519779,
+      "max_group": 2413
+    }
+  },
+  "blocking": [
+    {
+      "key": "name_key",
+      "target": "S2",
+      "pair_recall": 0.2856103999898203,
+      "cand_per_entity_mean": 5.960163964363217,
+      "entities_with_0_cand": 0.39013766861924914
+    },
+    {
+      "key": "name_key",
+      "target": "S3",
+      "pair_recall": 0.292264444909761,
+      "cand_per_entity_mean": 6.8178207475821555,
+      "entities_with_0_cand": 0.3713559006371609
+    },
+    {
+      "key": "sort_key",
+      "target": "S2",
+      "pair_recall": 0.34680025200216913,
+      "cand_per_entity_mean": 6.8517510029132405,
+      "entities_with_0_cand": 0.3353774501873963
+    },
+    {
+      "key": "sort_key",
+      "target": "S3",
+      "pair_recall": 0.3509075109018426,
+      "cand_per_entity_mean": 7.903042883858727,
+      "entities_with_0_cand": 0.3188278523722586
+    }
+  ],
+  "address_signal": {
+    "S2": {
+      "sampled": 30000,
+      "postcode_present": 0.0886,
+      "house_agree": 0.8154666666666667,
+      "postcode_agree": 0.05006666666666667,
+      "either_agree": 0.8154666666666667
+    },
+    "S3": {
+      "sampled": 30000,
+      "postcode_present": 0.08393333333333333,
+      "house_agree": 0.8274666666666667,
+      "postcode_agree": 0.0487,
+      "either_agree": 0.8274666666666667
+    }
+  },
+  "test_source1": {
+    "records": 1732544,
+    "blank_name": 0,
+    "unique_name_keys": 1211986,
+    "countries": {
+      "US": 663106,
+      "France": 259452,
+      "India": 809986
+    }
+  },
+  "test_source2": {
+    "records": 4887273,
+    "blank_name": 2158,
+    "unique_name_keys": 3856068,
+    "countries": {
+      "India": 2312565,
+      "France": 703378,
+      "US": 1871330
+    }
+  },
+  "test_source3": {
+    "records": 5082316,
+    "blank_name": 2230,
+    "unique_name_keys": 4041033,
+    "countries": {
+      "India": 2405000,
+      "France": 731615,
+      "US": 1945701
+    }
+  },
+  "test": {
+    "submission_rows": 1732544,
+    "unseen_countries": [
+      "France"
+    ]
+  }
+}

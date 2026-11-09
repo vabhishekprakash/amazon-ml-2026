@@ -1,0 +1,55 @@
+{
+  "sample": 6000,
+  "max_df": 300,
+  "max_group": 500,
+  "families": {
+    "exact_name": {
+      "ceiling": 0.5251239445411136,
+      "pair_recall": 0.29038864777880724,
+      "full_coverage": 0.043839490896234755,
+      "cand_per_entity": 12.260333333333334
+    },
+    "token_sort": {
+      "ceiling": 0.5956180141243408,
+      "pair_recall": 0.3503194031306383,
+      "full_coverage": 0.06169347710800778,
+      "cand_per_entity": 14.223
+    },
+    "house": {
+      "ceiling": 0.3324599124802143,
+      "pair_recall": 0.25332813185741454,
+      "full_coverage": 0.16563549584585469,
+      "cand_per_entity": 121.30733333333333
+    },
+    "rare_token": {
+      "ceiling": 0.4787820293889035,
+      "pair_recall": 0.41210318427853904,
+      "full_coverage": 0.3116492840728301,
+      "cand_per_entity": 89.436
+    },
+    "addr_token": {
+      "ceiling": 0.694548124106153,
+      "pair_recall": 0.6126688447847076,
+      "full_coverage": 0.4675623121796005,
+      "cand_per_entity": 221.99816666666666
+    },
+    "name_sort_house": {
+      "ceiling": 0.7000092434319264,
+      "pair_recall": 0.5089969278782854,
+      "full_coverage": 0.2474809969948736,
+      "cand_per_entity": 135.20633333333333
+    },
+    "name_keys": {
+      "ceiling": 0.8123178447779805,
+      "pair_recall": 0.6878139171990052,
+      "full_coverage": 0.4771080077779742,
+      "cand_per_entity": 223.45966666666666
+    },
+    "addr_plus_name": {
+      "ceiling": 0.925613133258056,
+      "pair_recall": 0.8568781391719901,
+      "full_coverage": 0.716987802722291,
+      "cand_per_entity": 384.62
+    }
+  }
+}

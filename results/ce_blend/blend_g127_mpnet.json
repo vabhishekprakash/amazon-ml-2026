@@ -1,0 +1,34 @@
+{
+ "intercept": -0.1660007839318924,
+ "coef": [
+  0.6407307578528285,
+  0.4389400877349458,
+  0.012528122421644859
+ ],
+ "features": [
+  "logit_lgbm",
+  "logit_ce",
+  "product"
+ ],
+ "threshold": 0.8,
+ "per_country": {
+  "India": {},
+  "US": {}
+ },
+ "verdict": "refit",
+ "heldout": "outputs/cache/cv4m5_g127_pseudo.pkl",
+ "ce": "outputs/ce/run_mpnet/ce",
+ "cross_encoder_trained_on": {
+  "heldout_digest": "e23463130731404c744ad13b31f361209e0b144ad28f272ca64b20e4f003d0f0",
+  "train_sets": [
+   "train"
+  ],
+  "train_pairs": 2945359,
+  "train_sha256": "accc0761e1060f62c4616dc437456c33b15d26068f9db4123bcd93c0382408bc",
+  "train_countries": null,
+  "sample": null
+ },
+ "heldout_weighted": 0.9822161990138177,
+ "lgbm_weighted_075": 0.976181214332178,
+ "pairs_with_ce": 0.14775997031129984
+}

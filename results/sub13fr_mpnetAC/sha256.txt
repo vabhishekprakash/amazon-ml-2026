@@ -1,0 +1,5 @@
+172439c0ffde34f170b4f4f9fa5f1fefc07d16e42e2681d4fbf6a9b1c49f82f3  matching_results.tsv
+size 95466679 bytes
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks PASS
+probe: sub13 with France also scored by the A->C cross-encoder blend (US+India trained) instead of LightGBM alone, France through the same 0.02 gate; US/India identical to sub13
+3.270 ids per entity, 5.98% empty

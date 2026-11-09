@@ -1,0 +1,4 @@
+603debc7ba14e032cec04daa0486136eaa0014b4606ccbdc57bc36e3aff46dd5  matching_results.tsv
+size 95522077 bytes
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks PASS
+sub13 (A->C blend, 0.80, France LightGBM) plus the blank-address unique-name rule for India (6,709 ids); held-out +0.00045 overall rule, India-only +0.00061 India (hit precision 0.913); US failed the 0.80 precision gate (0.777)

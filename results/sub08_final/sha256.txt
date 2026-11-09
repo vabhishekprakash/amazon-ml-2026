@@ -1,0 +1,6 @@
+b55f919a8457ec6fe83181b560378b210d73a7c4b774d35f1a290fc0ef4f4353  matching_results.tsv
+size 93993320 bytes, 1,732,545 lines (header + 1,732,544 test Source 1 entities)
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks (src/check_submission.py): 12/12 PASS
+model: sub07 + three frequency-weighted address features (per-country token weights from the split's own text); threshold 0.75 + target-argmax
+code: commit 927dc77; scores outputs/scores/test_v8; 3.20 ids per entity, 6.12% empty
+held-out 4-fold cross-fit 0.97696 +- 0.00082 (60,000 entities), sub07 0.97604; every fold up

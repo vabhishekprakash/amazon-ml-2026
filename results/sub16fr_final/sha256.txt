@@ -1,0 +1,4 @@
+bad33558e144fd9e4d827e1508883acc4a3db41892b763f0ff4dba5c302dff13  matching_results.tsv
+size 95584672 bytes
+official validator --check-ids (with candidate_pairs.tsv): PASS
+sub13 (A->C blend, 0.80) for US/India with the India blank-address rule; France rescored by the decoy-feature LightGBM retrained on France self-labels harvested from the decoy-aware sub15fr model (pseudo_v11), threshold 0.80

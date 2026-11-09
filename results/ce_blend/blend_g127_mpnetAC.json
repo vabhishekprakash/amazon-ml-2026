@@ -1,0 +1,23 @@
+{
+ "intercept": -0.025894172622579863,
+ "coef": [
+  0.5843881733311794,
+  0.573474796478302,
+  0.0263770212744899
+ ],
+ "ce_dirs": [
+  "outputs/ce/lane_mpnetAC/ce"
+ ],
+ "threshold": 0.8,
+ "per_country": {
+  "India": {},
+  "US": {}
+ },
+ "verdict": "multi",
+ "heldout": "outputs/cache/cv4m5_g127_pseudo.pkl",
+ "heldout_weighted": 0.9836799295246118,
+ "per_country_at_best": {
+  "India": 0.9822303856180417,
+  "US": 0.9854505518243757
+ }
+}

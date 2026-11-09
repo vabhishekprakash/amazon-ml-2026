@@ -1,0 +1,5 @@
+2f2dbe23287733f52b030746cdd35b1c55b180951e5cc94db5d554a0481e53d1  matching_results.tsv
+size 95414966 bytes
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks PASS
+model: sub12 (sub09 LightGBM + mpnet continued on batch A, held-out 0.98324) with France at threshold 0.80 (full-competition check: an unseen country peaks at 0.75-0.80 once every entity competes in argmax; 0.95 loses 0.0065); argmax_threshold 0.80
+3.268 ids per entity, 6.00% empty

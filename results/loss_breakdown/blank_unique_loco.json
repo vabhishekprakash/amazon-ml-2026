@@ -1,0 +1,43 @@
+{
+  "translit_sha256": "4c4363957a3761694a35c4647bf9f996b3f145efc82ce928883c605ce01f6d83",
+  "dump": "scratch/loco_ce/loco_decoy_group.pkl",
+  "rule": "scored blank-address exact normalized name unique among all same-country Source 1; target argmax first",
+  "baseline": 0.9623819491372578,
+  "after": 0.9627515027490968,
+  "delta": 0.00036955361183898947,
+  "added_pairs": 564,
+  "added_true": 465,
+  "added_false": 99,
+  "country": {
+    "India": {
+      "baseline": 0.9348148064546729,
+      "after": 0.9354371587008026,
+      "delta": 0.0006223522461297319,
+      "fold_deltas": [
+        0.00064328780413641,
+        0.00048040350697710945,
+        0.0006688368352455183,
+        0.0006976329897694307
+      ],
+      "added_pairs": 203,
+      "added_true": 186,
+      "added_false": 17,
+      "entity_regressions": 17
+    },
+    "US": {
+      "baseline": 0.9806238894844204,
+      "after": 0.9808261592518771,
+      "delta": 0.00020226976745677254,
+      "fold_deltas": [
+        0.00038061103007041284,
+        -0.0001535619599603497,
+        0.00038458235224614193,
+        0.00019443822495856706
+      ],
+      "added_pairs": 361,
+      "added_true": 279,
+      "added_false": 82,
+      "entity_regressions": 77
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "intercept": -0.1806444832208895,
+  "coef": [
+    0.7007762223933368,
+    0.420632718299117,
+    0.016507041624743445
+  ],
+  "features": [
+    "logit_lgbm",
+    "logit_ce",
+    "logit_lgbm*logit_ce"
+  ],
+  "clip": 0.0001,
+  "threshold": 0.75,
+  "verdict": "reject",
+  "gain_vs_base": 0.005533055376382379,
+  "every_fold_improves": true,
+  "no_country_below_base": false,
+  "base_threshold": 0.75,
+  "lgbm_best_threshold": 0.65,
+  "verdict_vs_lgbm_best": "reject",
+  "gain_vs_lgbm_best": 0.005405048515294442,
+  "every_fold_improves_vs_lgbm_best": true,
+  "no_country_below_lgbm_best": false,
+  "weighting": "held-out entities reweighted to the test Source 1 country mix",
+  "test_share_of_unseen_countries": {
+    "France": 0.14975204092940786
+  },
+  "floor": 0.02,
+  "heldout_entities": 60000,
+  "scored_pairs": 1738035,
+  "exported_pairs": 256812,
+  "entities_without_exported_pair": 1609,
+  "lgbm": {
+    "0.60": 0.9750706122105942,
+    "0.65": 0.975613808191297,
+    "0.70": 0.975613808191297,
+    "0.75": 0.975485801330209,
+    "0.80": 0.974789159559545,
+    "0.85": 0.9748041468514822
+  },
+  "blend": {
+    "0.60": 0.9799423500437673,
+    "0.65": 0.9806193854045812,
+    "0.70": 0.9809465069591414,
+    "0.75": 0.9810188567065914,
+    "0.80": 0.9807622027943526,
+    "0.85": 0.9803522521811411
+  },
+  "lgbm_unweighted": {
+    "0.60": 0.9763662017867503,
+    "0.65": 0.976982353996403,
+    "0.70": 0.976982353996403,
+    "0.75": 0.9768692581602618,
+    "0.80": 0.9761603481127459,
+    "0.85": 0.9761762214525744
+  },
+  "blend_unweighted": {
+    "0.60": 0.9805629280301994,
+    "0.65": 0.9812344573632925,
+    "0.70": 0.9815775525359884,
+    "0.75": 0.9816780560320498,
+    "0.80": 0.9814039624653584,
+    "0.85": 0.9809938236851766
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "entities": 11951,
+      "lgbm_at_base": 0.9745634578481206,
+      "lgbm_at_best": 0.9745634578481206,
+      "lgbm_at_own_best": 0.9747592356878885,
+      "blend_at_best": 0.9801968865416001
+    },
+    {
+      "fold": 1,
+      "entities": 12054,
+      "lgbm_at_base": 0.9733415408545868,
+      "lgbm_at_best": 0.9733415408545868,
+      "lgbm_at_own_best": 0.9734300564767149,
+      "blend_at_best": 0.9798132972630123
+    },
+    {
+      "fold": 2,
+      "entities": 12058,
+      "lgbm_at_base": 0.9773307284822471,
+      "lgbm_at_best": 0.9773307284822471,
+      "lgbm_at_own_best": 0.976902015161373,
+      "blend_at_best": 0.9816149538919663
+    },
+    {
+      "fold": 3,
+      "entities": 11998,
+      "lgbm_at_base": 0.9774985726309626,
+      "lgbm_at_best": 0.9774985726309626,
+      "lgbm_at_own_best": 0.97819324867494,
+      "blend_at_best": 0.9825208906066829
+    },
+    {
+      "fold": 4,
+      "entities": 11939,
+      "lgbm_at_base": 0.9746816335867727,
+      "lgbm_at_best": 0.9746816335867727,
+      "lgbm_at_own_best": 0.9747739329891244,
+      "blend_at_best": 0.9809454642169995
+    }
+  ],
+  "per_country": {
+    "India": {
+      "entities": 23893,
+      "heldout_share": 0.39821666666666666,
+      "test_share": 0.5498543200288916,
+      "weight": 1.3807918303157198,
+      "lgbm_at_base": 0.9713789248277936,
+      "lgbm_at_own_best": 0.9715511959815221,
+      "blend_at_best": 0.9790619830540689,
+      "blend_coef_loco_at_best": 0.9788840069509702,
+      "ce_loco_at_best": 0.9636782284674278,
+      "flips": {
+        "up_per_1k": 61.85912191855355,
+        "down_per_1k": 14.941614698865777,
+        "up_share": 0.050800852409431496,
+        "down_share": 0.004634497799587179
+      }
+    },
+    "US": {
+      "entities": 36107,
+      "heldout_share": 0.6017833333333333,
+      "test_share": 0.4501456799711084,
+      "weight": 0.7480195197127012,
+      "lgbm_at_base": 0.9805023634947583,
+      "lgbm_at_own_best": 0.9805763013874783,
+      "blend_at_best": 0.9834091838372648,
+      "blend_coef_loco_at_best": 0.9832786654175536,
+      "ce_loco_at_best": null,
+      "flips": {
+        "up_per_1k": 33.17916193535879,
+        "down_per_1k": 14.401639571274268,
+        "up_share": 0.037362774451097806,
+        "down_share": 0.004383635551284321
+      }
+    }
+  },
+  "ce_loco": {
+    "dir": "outputs/ce/run_us/ce",
+    "train_countries": [
+      "US"
+    ],
+    "scored_countries": [
+      "India"
+    ],
+    "intercept": -0.1532346275564028,
+    "coef": [
+      0.7647534908276427,
+      0.38174190339549363,
+      0.017877016928115802
+    ],
+    "trained_on": {
+      "heldout_digest": "e23463130731404c744ad13b31f361209e0b144ad28f272ca64b20e4f003d0f0",
+      "train_pairs": 1764538,
+      "train_countries": [
+        "US"
+      ],
+      "train_sha256": "2d26edc4d438a2334bd1dbd67685b6c42966eb8036a5c1c136e933c593a1efa6",
+      "sample": null
+    }
+  },
+  "cross_encoder_trained_on": {
+    "heldout_digest": "e23463130731404c744ad13b31f361209e0b144ad28f272ca64b20e4f003d0f0",
+    "train_pairs": 2945359,
+    "train_countries": null,
+    "train_sha256": "accc0761e1060f62c4616dc437456c33b15d26068f9db4123bcd93c0382408bc",
+    "sample": null
+  },
+  "auc_exported_pairs": {
+    "lgbm": 0.9934912312074974,
+    "ce": 0.9927760697428505,
+    "blend_oof": 0.996554889227371
+  },
+  "calibrator": {
+    "path": "/Users/akhil/Akhil's Files/amazon-ml-2026/outputs/models/sub08_addridf/calibration.pkl",
+    "sha256": "ed5d4e76ccec5b4df7655e7d9d133cf54e65c1d9bec613e6ff449ed3ca074b3b"
+  },
+  "sources": {
+    "heldout_dump": "outputs/cache/cv4m5_addridf.pkl",
+    "pairs": "outputs/ce/export",
+    "ce": "outputs/ce/run/ce"
+  }
+}

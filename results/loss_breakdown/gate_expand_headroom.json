@@ -1,0 +1,11 @@
+{
+ "selected_pairs": 15996,
+ "per_entity": 0.267,
+ "selected_true": 207,
+ "below_gate_pairs": 1481223,
+ "below_gate_true_all": 594,
+ "oracle_selected": 0.00054,
+ "oracle_all_below_gate": 0.00105,
+ "oracle_selected_US": 0.0004,
+ "oracle_selected_India": 0.00065
+}

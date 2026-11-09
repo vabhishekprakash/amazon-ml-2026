@@ -1,0 +1,7 @@
+{
+ "rescue_pairs": 3379594,
+ "per_rescued_country_entity": 2.2942178764123353,
+ "accepted": 22933,
+ "threshold": 0.3,
+ "seconds": 1773
+}

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Data: never commit datasets. Synthetic data is regenerable via
+# scripts/make_synthetic_data.py; real competition data is downloaded on the
+# cloud machine (see README Day 1 checklist).
+data/*
+!data/.gitkeep
+
+# Generated model artifacts and submissions
+outputs/
+
+# Credentials / keys — never commit
+*.pem
+.env
+.aws/
+kaggle.json
+
+# Local folders and OS files, not part of this project.
+# %USERPROFILE% is a literal directory name (a shell variable that never expanded).
+%USERPROFILE%/
+.DS_Store

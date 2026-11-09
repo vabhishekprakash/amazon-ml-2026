@@ -1,0 +1,12 @@
+# CPU steps (blocking, LightGBM, pair export, blend, decision), run with Python 3.14.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+rapidfuzz==3.14.6
+
+# GPU steps (src/ce_rerank.py), run in the Kaggle T4 x2 image: torch 2.10.0+cu128.
+torch==2.10.0
+transformers==5.0.0
+# The multilingual-e5-base run used torch 2.14.0+cu126 and transformers 5.17.0 on
+# an RTX 4060. sentence-transformers is not needed: models load through transformers.

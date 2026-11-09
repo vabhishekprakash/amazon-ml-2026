@@ -1,0 +1,28 @@
+{
+  "entities": 25000,
+  "max_df": 300,
+  "max_group": 200,
+  "calibrated": false,
+  "group_features": false,
+  "pairs": 6633419,
+  "positive_rate": 0.012049140872904304,
+  "macro_f05_greedy": 0.8290369805893631,
+  "macro_f05_one_to_one": 0.8294121564958022,
+  "feature_gain": {
+    "addr_cont": 860588400667.0868,
+    "name_char_jac": 144126432811.37714,
+    "name_len_ratio": 122763680565.90637,
+    "n_cand": 103954906828.0828,
+    "addr_jac": 79052625125.05026,
+    "addr_char_jac": 59841226937.333595,
+    "name_cont": 32739423263.76343,
+    "name_jac": 10139681640.595009,
+    "nw_shared": 1894069339.4198835,
+    "house_hit": 1413055687.3464086,
+    "pc_hit": 144821233.09040165,
+    "name_sort_eq": 75670.5104560852,
+    "addr_eq": 62.20670032501221,
+    "name_eq": 51.126121520996094,
+    "best_rank": 0.0
+  }
+}

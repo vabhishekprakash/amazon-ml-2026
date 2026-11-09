@@ -1,0 +1,36 @@
+{
+  "sample": 20000,
+  "max_group": 100,
+  "schemes": {
+    "exact_name": {
+      "entity_macro_ceiling": 0.5209478656756469,
+      "pair_recall": 0.28540134337235784,
+      "entities_fully_covered": 0.04344375066144566,
+      "cand_per_entity": 10.3533
+    },
+    "token_sort": {
+      "entity_macro_ceiling": 0.5897272182102686,
+      "pair_recall": 0.34488111299705504,
+      "entities_fully_covered": 0.061435072494443854,
+      "cand_per_entity": 11.6664
+    },
+    "house_number": {
+      "entity_macro_ceiling": 0.1741445138164201,
+      "pair_recall": 0.10672991832412122,
+      "entities_fully_covered": 0.06746745687374325,
+      "cand_per_entity": 11.8034
+    },
+    "name_or_sort": {
+      "entity_macro_ceiling": 0.5913427731414492,
+      "pair_recall": 0.3457950704327516,
+      "entities_fully_covered": 0.06159381945179384,
+      "cand_per_entity": 12.1981
+    },
+    "all_three": {
+      "entity_macro_ceiling": 0.6379998728985128,
+      "pair_recall": 0.4144289216752985,
+      "entities_fully_covered": 0.13959149116308603,
+      "cand_per_entity": 23.8701
+    }
+  }
+}

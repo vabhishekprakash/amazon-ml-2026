@@ -1,0 +1,230 @@
+{
+ "baseline_deployed": {
+  "all": 0.98402,
+  "US": 0.98545,
+  "India": 0.98284,
+  "folds": [
+   0.98332,
+   0.98292,
+   0.98431,
+   0.98559,
+   0.98393
+  ]
+ },
+ "combined_deployed": {
+  "all": 0.98499,
+  "US": 0.98648,
+  "India": 0.98378,
+  "folds": [
+   0.98438,
+   0.98393,
+   0.98554,
+   0.98649,
+   0.98463
+  ]
+ },
+ "rescue": {
+  "scored_pairs": 151713,
+  "per_entity": 2.529,
+  "accepted": 894
+ },
+ "fp_combined": 321,
+ "missed_true_combined": 8760,
+ "true_pairs": 207156,
+ "perfect_selection": {
+  "within_topk_scored": {
+   "all": 0.99333,
+   "US": 0.99562,
+   "India": 0.99146,
+   "folds": [
+    0.99267,
+    0.99274,
+    0.99313,
+    0.99406,
+    0.99407
+   ]
+  },
+  "within_topk_scored_plus_rescue_scored": {
+   "all": 0.99492,
+   "US": 0.99721,
+   "India": 0.99304,
+   "folds": [
+    0.99451,
+    0.99461,
+    0.99467,
+    0.99538,
+    0.99543
+   ]
+  },
+  "within_raw_plus_rescue_scored": {
+   "all": 0.99607,
+   "US": 0.99752,
+   "India": 0.99488,
+   "folds": [
+    0.99583,
+    0.99585,
+    0.99581,
+    0.99633,
+    0.99652
+   ]
+  }
+ },
+ "remove_all_fp": {
+  "all": 0.98652,
+  "US": 0.98774,
+  "India": 0.98551,
+  "folds": [
+   0.98613,
+   0.98591,
+   0.98677,
+   0.98753,
+   0.98623
+  ]
+ },
+ "residual_buckets_add_alone": [
+  {
+   "stage": "scored_topk_missed",
+   "address": "nonblank",
+   "pairs": 1257,
+   "US": 828,
+   "gain": 0.00205,
+   "gain_US": 0.00215,
+   "gain_India": 0.00195
+  },
+  {
+   "stage": "scored_topk_missed",
+   "address": "blank_unique_equal",
+   "pairs": 302,
+   "US": 302,
+   "gain": 0.00037,
+   "gain_US": 0.00082,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "scored_topk_missed",
+   "address": "blank_variant",
+   "pairs": 2802,
+   "US": 1851,
+   "gain": 0.00389,
+   "gain_US": 0.00437,
+   "gain_India": 0.00348
+  },
+  {
+   "stage": "scored_topk_missed",
+   "address": "blank_shared_name",
+   "pairs": 1200,
+   "US": 755,
+   "gain": 0.00195,
+   "gain_US": 0.00197,
+   "gain_India": 0.00191
+  },
+  {
+   "stage": "rescue_scored_rejected",
+   "address": "nonblank",
+   "pairs": 144,
+   "US": 85,
+   "gain": 0.00028,
+   "gain_US": 0.00028,
+   "gain_India": 0.00028
+  },
+  {
+   "stage": "rescue_scored_rejected",
+   "address": "blank_unique_equal",
+   "pairs": 0,
+   "US": 0,
+   "gain": 0.0,
+   "gain_US": 0.0,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "rescue_scored_rejected",
+   "address": "blank_variant",
+   "pairs": 47,
+   "US": 30,
+   "gain": 7e-05,
+   "gain_US": 9e-05,
+   "gain_India": 5e-05
+  },
+  {
+   "stage": "rescue_scored_rejected",
+   "address": "blank_shared_name",
+   "pairs": 0,
+   "US": 0,
+   "gain": 0.0,
+   "gain_US": 0.0,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "prerank_cut",
+   "address": "nonblank",
+   "pairs": 632,
+   "US": 144,
+   "gain": 0.00117,
+   "gain_US": 0.00031,
+   "gain_India": 0.00187
+  },
+  {
+   "stage": "prerank_cut",
+   "address": "blank_unique_equal",
+   "pairs": 0,
+   "US": 0,
+   "gain": 0.0,
+   "gain_US": 0.0,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "prerank_cut",
+   "address": "blank_variant",
+   "pairs": 23,
+   "US": 8,
+   "gain": 3e-05,
+   "gain_US": 1e-05,
+   "gain_India": 3e-05
+  },
+  {
+   "stage": "prerank_cut",
+   "address": "blank_shared_name",
+   "pairs": 0,
+   "US": 0,
+   "gain": 0.0,
+   "gain_US": 0.0,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "never_generated",
+   "address": "nonblank",
+   "pairs": 1514,
+   "US": 432,
+   "gain": 0.00306,
+   "gain_US": 0.00113,
+   "gain_India": 0.00463
+  },
+  {
+   "stage": "never_generated",
+   "address": "blank_unique_equal",
+   "pairs": 0,
+   "US": 0,
+   "gain": 0.0,
+   "gain_US": 0.0,
+   "gain_India": 0.0
+  },
+  {
+   "stage": "never_generated",
+   "address": "blank_variant",
+   "pairs": 788,
+   "US": 523,
+   "gain": 0.00114,
+   "gain_US": 0.00138,
+   "gain_India": 0.00092
+  },
+  {
+   "stage": "never_generated",
+   "address": "blank_shared_name",
+   "pairs": 51,
+   "US": 44,
+   "gain": 7e-05,
+   "gain_US": 0.00013,
+   "gain_India": 2e-05
+  }
+ ]
+}

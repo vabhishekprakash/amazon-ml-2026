@@ -1,0 +1,6 @@
+7c3fbe605061caa16d86e8d7c8fac9e862074f0d9f2c767b5f871a1de5f3f7c3  matching_results.tsv
+size 92568791 bytes, 1,732,545 lines (header + 1,732,544 test Source 1 entities)
+official validator --check-ids: PASS; candidate subset check: PASS
+format checks (src/check_submission.py): 12/12 PASS
+change vs sub04: French street/legal normalization (Rue/R, BD/Boulevard, Pl, Imp, EURL/SCI/Groupe/Distribution/Freres filler)
+held-out (US/India) 0.96758 vs sub04 0.96787 (noise); France effect measurable only on the leaderboard

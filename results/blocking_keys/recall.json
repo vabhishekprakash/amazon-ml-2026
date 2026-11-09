@@ -1,0 +1,66 @@
+{
+  "entities": 60000,
+  "true_pairs": 207156,
+  "never_blocked": 3361,
+  "never_blocked_by_country": {
+    "US": 1587,
+    "India": 1774
+  },
+  "baseline_raw": 27407142,
+  "baseline_raw_per_entity": 456.7857,
+  "families": {
+    "rn": {
+      "recovered": 232,
+      "recovered_share": 0.0690270752752157,
+      "recovered_by_country": {
+        "India": 141,
+        "US": 91
+      },
+      "added_raw": 38625,
+      "added_per_entity": 0.64375,
+      "added_share_of_baseline": 0.001409304187937582
+    },
+    "dp": {
+      "recovered": 571,
+      "recovered_share": 0.16988991371615592,
+      "recovered_by_country": {
+        "US": 249,
+        "India": 322
+      },
+      "added_raw": 1053604,
+      "added_per_entity": 17.560066666666668,
+      "added_share_of_baseline": 0.038442680378712964
+    },
+    "xk": {
+      "recovered": 839,
+      "recovered_share": 0.2496280868789051,
+      "recovered_by_country": {
+        "US": 485,
+        "India": 354
+      },
+      "added_raw": 3328959,
+      "added_per_entity": 55.48265,
+      "added_share_of_baseline": 0.12146319379087393
+    },
+    "ALL": {
+      "recovered": 1328,
+      "recovered_share": 0.39512049985123476,
+      "recovered_by_country": {
+        "US": 694,
+        "India": 634
+      },
+      "added_raw": 4399940,
+      "added_per_entity": 73.33233333333334,
+      "added_share_of_baseline": 0.16053990598508958
+    }
+  },
+  "prerank": {
+    "top_k": 40,
+    "entities_touched": 1214,
+    "recovered": 1328,
+    "survives_top_k": 979,
+    "survives_share": 0.7371987951807228,
+    "kept_pairs": 35755
+  },
+  "seconds": 114.6
+}

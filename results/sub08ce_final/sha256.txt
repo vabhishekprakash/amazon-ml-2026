@@ -1,0 +1,7 @@
+7287755ba174f8c013b19731a4bf3182fa22f77c8433d8ffbd1e8c5dd991d633  matching_results.tsv
+size 95331348 bytes, 1,732,545 lines (header + 1,732,544 test Source 1 entities)
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks (src/check_submission.py): 12/12 PASS
+model: sub08 (address-weight LightGBM) with its test pair scores blended with a multilingual cross-encoder for countries that have training labels (US, India); France keeps the LightGBM score; argmax_threshold 0.75
+blend: results/ce_blend/blend_addridf_cal.json, fitted on held-out probabilities passed through sub08's calibrator; cross-encoder rescored 8,151,771 test pairs >= 0.02
+held-out (60,000 entities, test-mix weighted, 0.75): LightGBM 0.97549 -> blend 0.98102; every one of 5 folds up
+3.26 ids per entity (US 3.33, India 3.25, France 3.13 unchanged), 5.98% empty

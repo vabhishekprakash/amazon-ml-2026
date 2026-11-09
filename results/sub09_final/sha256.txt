@@ -1,0 +1,5 @@
+1a756662a0d9e3a0fb0d85344f0e2312a1409ffda6ce595bf5a2bb57e090157f  matching_results.tsv
+size 94037917 bytes, 1,732,545 lines
+official validator --check-ids (with candidate_pairs.tsv): PASS; format checks: 12/12 PASS
+model: bigger trees (num_leaves 127) + France self-labels (pseudo_v8), uncalibrated, argmax_threshold 0.75; cross-fit 0.97749 +- 0.00056
+3.206 ids per entity, 6.13% empty

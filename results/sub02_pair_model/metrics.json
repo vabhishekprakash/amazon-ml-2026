@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "run": "sub02_pair_model",
+  "rows": 1732544,
+  "limit": null,
+  "entities_fit": 25000,
+  "max_df": 300,
+  "max_group": 200,
+  "calibrated": false,
+  "top_k": 50,
+  "heldout_macro_f05": 0.8380804843719443,
+  "heldout_entities": 6241,
+  "candidate_pairs": 80252699,
+  "cand_per_entity": 46.32072778526837,
+  "predicted_ids": 5015598,
+  "ids_per_entity": 2.8949325385098446,
+  "entities_with_match": 1705427,
+  "seconds": 3593.809681892395
+}

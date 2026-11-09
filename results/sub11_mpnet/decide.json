@@ -1,0 +1,13 @@
+{
+  "rule": "argmax_threshold",
+  "split": "test",
+  "rows": 1732544,
+  "threshold": 0.8,
+  "unseen_threshold": 0.95,
+  "topk": 3,
+  "k_hat": 3.479,
+  "predicted_ids": 5631288,
+  "ids_per_entity": 3.2503001366776254,
+  "entities_with_match": 1627623,
+  "empty_share": 0.06055892375604888
+}

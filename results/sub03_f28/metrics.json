@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "run": "sub03_f28",
+  "rows": 1732544,
+  "limit": null,
+  "entities_fit": 60000,
+  "max_df": 300,
+  "max_group": 200,
+  "calibrated": false,
+  "top_k": 50,
+  "heldout_macro_f05": 0.8735159731787672,
+  "heldout_entities": 14979,
+  "candidate_pairs": 80252699,
+  "cand_per_entity": 46.32072778526837,
+  "predicted_ids": 5270079,
+  "ids_per_entity": 3.0418153882383363,
+  "entities_with_match": 1698376,
+  "seconds": 3899.3996937274933
+}
